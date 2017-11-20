@@ -1,7 +1,79 @@
-#output-subject {
-    width: 50%;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    padding-bottom: 0.5em;
-    border-bottom: solid blue;
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    left: 600px;
+    top: -50px;
+
+
+}
+
+
+ul li:hover {
+    background: rgb(64, 67, 255);
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+
+.header {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    position: relative;
+    right: -650px;
+    top: 50px;
+    width: 300px;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addButton {
+    padding: 10px;
+    width: 25%;
+    background: #3019ff;
+    color: rgb(255, 255, 255);
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+body {
+    width: 500px;
+    top: 500px;
 }
